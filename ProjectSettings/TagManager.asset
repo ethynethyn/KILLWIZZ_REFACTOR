@@ -8,11 +8,12 @@ TagManager:
   - ElevatorPanel
   - Snow
   - Wood
+  - Fire
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - FireLayer
   - Water
   - UI
   - 
