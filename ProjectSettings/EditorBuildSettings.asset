@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/AngelStuff/FirstScene.unity
+    guid: ab76f051d5b3a9242adff15cf1d37281
+  - enabled: 0
     path: Assets/SCENES/MainMenu.unity
     guid: 908863a4a40404e4b93d784d240fc48e
-  - enabled: 1
+  - enabled: 0
     path: Assets/SCENES/OVERWORLD TEST.unity
     guid: c288d9079d9de49cbac82c4134b0dab8
-  - enabled: 1
+  - enabled: 0
     path: Assets/SCENES/FloorExample1.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
-  - enabled: 1
+  - enabled: 0
     path: Assets/SCENES/FloorExample2.unity
     guid: 4082404e2e99c4c4983b766090d6feb9
   m_configObjects:
