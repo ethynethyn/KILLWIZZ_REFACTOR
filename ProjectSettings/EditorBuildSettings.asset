@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/JONAHS STUFF/First Room/First Room.unity
+    guid: 2a2a9407a84ebde45a5c78200e8f6f92
+  - enabled: 1
     path: Assets/SCENES/MainMenu.unity
     guid: 908863a4a40404e4b93d784d240fc48e
   - enabled: 1
