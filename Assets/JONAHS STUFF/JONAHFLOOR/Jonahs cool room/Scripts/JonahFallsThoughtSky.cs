@@ -1,3 +1,4 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 
 public class JonahFallsThoughtSky : MonoBehaviour
@@ -12,6 +13,45 @@ public class JonahFallsThoughtSky : MonoBehaviour
     private bool startnow = false;
     public AudioSource bestbuy;
 
+    public GameObject phone;
+    public Mesh Siberna;
+    public Mesh iceD;
+    public Mesh water;
+    public Mesh twinGun;
+    public HandleMusicAnimation HMA;
+
+    public void TurnOffAnimator()
+    {
+        animator.enabled = false;
+    }
+    public void ActivatePhone()
+    {
+        phone.SetActive(true);
+        MeshFilter meshFilter = phone.GetComponent<MeshFilter>();
+        meshFilter.mesh = water;
+        HMA.StartMusicPart();
+    }
+
+    public void Twin()
+    {
+        MeshFilter meshFilter = phone.GetComponent<MeshFilter>();
+        meshFilter.mesh = twinGun;
+
+    }
+    public void Sem()
+    {
+        MeshFilter meshFilter = phone.GetComponent<MeshFilter>();
+        meshFilter.mesh = Siberna;
+
+    }
+    public void IceD()
+    {
+        MeshFilter meshFilter = phone.GetComponent<MeshFilter>();
+        meshFilter.mesh = iceD;
+
+    }
+
+
     public void PlayAudio()
     {
         Audio1.Play();
@@ -25,9 +65,30 @@ public class JonahFallsThoughtSky : MonoBehaviour
     {
         bestbuy.Stop();
     }
+    [SerializeField] private Transform target; // drag your Player Capsule here in Inspector
 
+    public GameObject player;
     void Update()
     {
+
+
+        // Find direction to the player
+        Vector3 direction = player.transform.position - transform.position;
+
+        // Flatten the direction so character only rotates around Y axis
+        direction.y = 0;
+
+        // Only rotate if there’s actually a direction to look at
+        if (direction.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 5f);
+        }
+
+
+
+
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             gameObject.GetComponent<Animator>().Play("Room tour");
