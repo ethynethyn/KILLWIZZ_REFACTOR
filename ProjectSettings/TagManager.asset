@@ -9,6 +9,7 @@ TagManager:
   - Snow
   - Wood
   - Fire
+  - Outline
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - FireLayer
   - Water
   - UI
-  - 
+  - outline
   - 
   - 
   - 

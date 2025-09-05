@@ -21,6 +21,31 @@ public class HandleMusicAnimation : MonoBehaviour
     public GameObject phone;
     public AudioSource Enought;
 
+    public GameObject lights;
+    public GameObject Lights2;
+
+    public void EnableLights2()
+    {
+        //Lights2.SetActive(true);
+    }
+    public void EnableLights22()
+    {
+        Lights2.SetActive(true);
+    }
+    public void disableLights22()
+    {
+        Lights2.SetActive(false);
+
+    }
+    public void disabletheLights()
+    {
+        lights.SetActive(false);
+    }
+    public void enabletheLights()
+    {
+        lights.SetActive(true);
+
+    }
     public void StartMusicPart()
     {
         sM = true;
@@ -52,6 +77,7 @@ public class HandleMusicAnimation : MonoBehaviour
 
             phone.SetActive(false);
             Enought.Play();
+            lights.SetActive(true);
             animator.enabled = true;                              // (re)enable
             //animator.Play("startTEST", 0, 0f);
 
