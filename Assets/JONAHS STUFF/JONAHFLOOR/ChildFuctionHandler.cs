@@ -10,4 +10,18 @@ public class ChildFuctionHandler : MonoBehaviour
             child.GetComponent<MouthSwitcherAnimatorJonah>().MouthSwitch();
         }
     }
+    public void ForceCloseDo()
+    {
+        if (child != null)
+        {
+            child.GetComponent<MouthSwitcherAnimatorJonah>().ForceClose();
+        }
+    }
+    public void ForceOpenDo()
+    {
+        if (child != null)
+        {
+            child.GetComponent<MouthSwitcherAnimatorJonah>().ForceOpen();
+        }
+    }
 }

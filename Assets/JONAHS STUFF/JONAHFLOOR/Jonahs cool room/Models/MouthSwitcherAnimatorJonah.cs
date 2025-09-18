@@ -20,6 +20,40 @@ public class MouthSwitcherAnimatorJonah : MonoBehaviour
         meshFilter = GetComponent<MeshFilter>();
         rend = GetComponent<Renderer>();
     }
+    public void ForceClose()
+    {
+        if (MouthClosed)
+        {
+
+        }
+        else
+        {
+            meshFilter.mesh = closedMouthMesh;
+
+            Material[] mats = rend.materials;
+            mats[1] = closedMouthMat; // only change the mouth slot
+            rend.materials = mats;
+            MouthClosed = true;
+        }
+    }
+    public void ForceOpen()
+    {
+        if (MouthClosed)
+        {
+            meshFilter.mesh = openMouthMesh;
+
+            // Get current materials
+            Material[] mats = rend.materials;
+            mats[1] = openMouthMat; // only change the mouth slot
+            rend.materials = mats;
+            MouthClosed = false;
+        }
+        else
+        {
+
+        }
+    }
+
     public void MouthSwitch()
     {
         if (MouthClosed)

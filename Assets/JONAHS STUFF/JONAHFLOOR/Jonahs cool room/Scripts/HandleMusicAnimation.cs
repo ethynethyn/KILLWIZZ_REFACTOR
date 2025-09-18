@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
 
 
 public class HandleMusicAnimation : MonoBehaviour
 {
+    private string lastQ1Value;
+
     public GameObject Explosion2;
     public GameObject littlechair;
 
@@ -23,6 +26,33 @@ public class HandleMusicAnimation : MonoBehaviour
 
     public GameObject lights;
     public GameObject Lights2;
+
+    public AudioSource Q1;
+    public AudioSource Ohyougonnapickthatone;
+
+    public AudioSource Orthatone;
+
+    public void OrThatOnetriggered()
+    {
+        if (Ohyougonnapickthatone.isPlaying)
+        {
+            
+        }
+        else
+        {
+            Orthatone.Play();
+
+        }
+    }
+    public void Question1()
+    {
+        Q1.Play();
+    }
+
+    public void Ohhyougonna()
+    {
+        Ohyougonnapickthatone.Play();
+    }
 
     public void EnableLights2()
     {
@@ -61,6 +91,18 @@ public class HandleMusicAnimation : MonoBehaviour
     }
     void Update()
     {
+
+        var currentValue = JR1STATICMANAGER.Q1Selected;
+        if (currentValue != lastQ1Value && currentValue != "NONE")
+        {
+            
+            if (!Ohyougonnapickthatone.isPlaying)
+            {
+                animator.Play("orthatone", 0, 0f);
+
+            }
+        }
+        lastQ1Value = currentValue;
         //if (!MusicAudio.isPlaying && fulldone == true && STARTTEST == false)
         //{
         //    // I HAVE NO IDEA WHY DISABLABLING THIS SCRIPT WOULD DO ANYTHING BUT IT DOES 
