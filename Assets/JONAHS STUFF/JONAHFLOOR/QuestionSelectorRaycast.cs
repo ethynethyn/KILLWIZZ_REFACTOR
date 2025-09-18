@@ -33,6 +33,26 @@ public class QuestionSelectorRaycast : MonoBehaviour
                     JR1STATICMANAGER.Q1Selected = "D";
 
                 }
+                else if (hit.collider.name == ("Q2A"))
+                {
+                    JR1STATICMANAGER.Q2Selected = "A";
+                }
+                else if (hit.collider.name == ("Q2B"))
+                {
+                    JR1STATICMANAGER.Q2Selected = "B";
+
+                }
+                else if (hit.collider.name == ("Q2C"))
+                {
+                    JR1STATICMANAGER.Q2Selected = "C";
+
+                }
+                else if (hit.collider.name == ("Q2D"))
+                {
+                    JR1STATICMANAGER.Q2Selected = "D";
+
+                }
+
 
             }
             else
