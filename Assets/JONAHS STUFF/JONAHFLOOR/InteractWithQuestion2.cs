@@ -20,7 +20,9 @@ public class InteractWithQuestion2 : MonoBehaviour
     public AudioSource Q2;
     public GameObject Jonah;
 
-
+    public AudioSource PlayBoiCarti;
+    public AudioSource Kahoot;
+    public AudioSource samcore;
     void Start()
     {
         outline = gameObject.GetComponent<Outline>();
@@ -40,7 +42,21 @@ public class InteractWithQuestion2 : MonoBehaviour
                 ||
                 JR1STATICMANAGER.Q2Selected == "B")
             {
-                RedX.SetActive(true);
+                if (JR1STATICMANAGER.Q2Selected == "A")
+                {
+                    Kahoot.Play();
+                }
+                else if (JR1STATICMANAGER.Q2Selected == "B")
+                {
+                    samcore.Play();
+                }
+                else if (JR1STATICMANAGER.Q2Selected == "C")
+                {
+                    PlayBoiCarti.Play();
+                }
+
+
+                    RedX.SetActive(true);
                 Destroy(gameObject);
                 Question2Selections.SetActive(false);
                 JR1STATICMANAGER.questiondone = 2;

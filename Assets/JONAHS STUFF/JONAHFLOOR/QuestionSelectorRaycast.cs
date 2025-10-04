@@ -58,12 +58,14 @@ public class QuestionSelectorRaycast : MonoBehaviour
             else
             {
                 JR1STATICMANAGER.Q1Selected = "NONE";
+                JR1STATICMANAGER.Q2Selected = "NONE";
             }
 
         }
         else
         {
             JR1STATICMANAGER.Q1Selected = "NONE";
+            JR1STATICMANAGER.Q2Selected = "NONE";
         }
     }
 }

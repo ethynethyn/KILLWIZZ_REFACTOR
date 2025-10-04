@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 public class HandleMusicAnimation : MonoBehaviour
 {
     private string lastQ1Value;
+    private string lastQ2Value;
 
     public GameObject Explosion2;
     public GameObject littlechair;
@@ -31,8 +32,20 @@ public class HandleMusicAnimation : MonoBehaviour
     public AudioSource Ohyougonnapickthatone;
 
     public AudioSource Orthatone;
+    public AudioSource question2;
+    public GameObject question2GO;
+    public AudioSource sitdown;
 
-    public void OrThatOnetriggered()
+    public void sitdownbro()
+    {
+        sitdown.Play();
+    }
+    public void PlayQuestion2()
+    {
+        question2.Play();
+        question2GO.SetActive(true);
+    }
+public void OrThatOnetriggered()
     {
         if (Ohyougonnapickthatone.isPlaying)
         {
@@ -89,6 +102,11 @@ public class HandleMusicAnimation : MonoBehaviour
         animator.updateMode = AnimatorUpdateMode.Normal;      // avoid physics step gating
         //, 0, 0f);                    // base layer, start at 0
     }
+    bool IsInAnimation(string animName, int layer = 0)
+    {
+        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(layer);
+        return stateInfo.IsName(animName);
+    }
     void Update()
     {
 
@@ -102,7 +120,38 @@ public class HandleMusicAnimation : MonoBehaviour
 
             }
         }
+
         lastQ1Value = currentValue;
+
+        var currentValue2 = JR1STATICMANAGER.Q2Selected;
+        if (currentValue2 != lastQ2Value && currentValue2 != "NONE")
+        {
+
+           if (JR1STATICMANAGER.Q2Selected == "C")
+           {
+                animator.Play("playboi carti come");
+                if (question2.isPlaying)
+                {
+                    question2.Stop();
+                }
+
+           }
+           else if (IsInAnimation("playboi carti come"))
+           {
+                animator.Play("playboi carti leave");
+           }
+
+        }
+        else if (IsInAnimation("playboi carti come") && currentValue2 == "NONE")
+        {
+            animator.Play("playboi carti leave");
+        }
+
+            lastQ2Value = currentValue2;
+
+
+
+
         //if (!MusicAudio.isPlaying && fulldone == true && STARTTEST == false)
         //{
         //    // I HAVE NO IDEA WHY DISABLABLING THIS SCRIPT WOULD DO ANYTHING BUT IT DOES 
