@@ -6,47 +6,45 @@ public class ConversationStarter : MonoBehaviour
     public GameObject interactionImage; // Drag your UI Image here in the Inspector
     public NPCConversation myConversation;
 
-    private bool playerInTrigger = false;
+    private bool playerInTrigger;
 
-    private void Start()
+    public void Start()
     {
         if (interactionImage != null)
             interactionImage.SetActive(false);
     }
 
-    private void Update()
+    public void Update()
     {
         if (playerInTrigger &&
             ConversationManager.Instance != null &&
             !ConversationManager.Instance.IsConversationActive)
         {
-            if (interactionImage != null)
-                interactionImage.SetActive(true);
-
+                
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConversationManager.Instance.StartConversation(myConversation);
+                interactionImage.SetActive(false);
             }
         }
-        else
-        {
-            if (interactionImage != null)
-                interactionImage.SetActive(false);
-        }
+        
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             playerInTrigger = true;
+            Debug.Log(this.gameObject.name);
+            interactionImage.SetActive(true);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    public void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            
             playerInTrigger = false;
 
             if (ConversationManager.Instance != null &&

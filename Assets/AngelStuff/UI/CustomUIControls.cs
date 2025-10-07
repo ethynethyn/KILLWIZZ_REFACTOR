@@ -8,10 +8,14 @@ public class CustomUIControls : MonoBehaviour
     public float speed;
     public GameObject MainMenu;
 
-    public bool enabled;
 
     public GameObject defaultselect;
     public GameObject badselection;
+
+    public void Start()
+    {
+        EventSystem.current.SetSelectedGameObject(defaultselect);
+    }
 
     // Update is called once per frame
     void Update()
@@ -49,13 +53,17 @@ public class CustomUIControls : MonoBehaviour
         if(Input.GetKey(KeyCode.Tab) && enabled == true)
         {
            MainMenu.gameObject.SetActive(true);
-            if (EventSystem.current.currentSelectedGameObject == badselection)
-                EventSystem.current.SetSelectedGameObject(defaultselect);
         }
 
         else
         {
             MainMenu.gameObject.SetActive(false);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab) && enabled == true)
+        {
+            if (EventSystem.current.currentSelectedGameObject != defaultselect)
+                EventSystem.current.SetSelectedGameObject(defaultselect);
         }
     }
 }

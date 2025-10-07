@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
                 return stat.currentValue;
         }
 
-        Debug.LogWarning($"Stat '{statName}' not found on {characterName}.");
+        //Debug.LogWarning($"Stat '{statName}' not found on {characterName}.");
         return 0;
     }
 
