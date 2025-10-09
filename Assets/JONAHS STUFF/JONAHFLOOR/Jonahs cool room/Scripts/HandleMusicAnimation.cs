@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Audio;
+using UnityEngine.UIElements;
 
 
 public class HandleMusicAnimation : MonoBehaviour
@@ -34,8 +35,87 @@ public class HandleMusicAnimation : MonoBehaviour
     public AudioSource Orthatone;
     public AudioSource question2;
     public GameObject question2GO;
+    public GameObject question3GO;
+    public GameObject question4GO;
+    public GameObject question5GO;
     public AudioSource sitdown;
 
+    public AudioSource Q5Audio;
+
+
+    public AudioSource End0;
+    public AudioSource End1;
+    public AudioSource End2;
+    public AudioSource End3;
+    public AudioSource End4;
+    public AudioSource End5;
+
+    public GameObject youfailed;
+    public GameObject DoExplode;
+
+    public GameObject JonahGun;
+
+    public void shoottoKill()
+    {
+        JonahGun.SetActive(true);
+        gameObject.SetActive(false);
+    }
+    public void explode()
+    {
+        DoExplode.SetActive(true);
+    }
+
+    public void YouFailedCome()
+    {
+        youfailed.SetActive(true);
+    }
+    public void YouFailedGoAway()
+    {
+        youfailed.SetActive(false);
+
+    }
+    public void LoseOrWin()
+    {
+        if (JR1STATICMANAGER.questionsright > 2)
+        {
+            animator.Play("passed");
+
+        }
+        else
+        {
+            animator.Play("failed");
+        }
+    }
+    public void WinAudio()
+    {
+        if (JR1STATICMANAGER.questionsright == 3)
+        {
+            End3.Play();
+        }
+        else if (JR1STATICMANAGER.questionsright == 4)
+        {
+            End4.Play();
+        }
+        else if (JR1STATICMANAGER.questionsright == 5)
+        {
+            End5.Play();
+        }
+    }
+    public void LostAudio()
+    {
+        if (JR1STATICMANAGER.questionsright == 0)
+        {
+            End0.Play();
+        }
+        else if (JR1STATICMANAGER.questionsright == 1)
+        {
+            End1.Play();
+        }
+        else if (JR1STATICMANAGER.questionsright == 2)
+        {
+            End2.Play();
+        }
+    }
     public void sitdownbro()
     {
         sitdown.Play();
@@ -45,7 +125,25 @@ public class HandleMusicAnimation : MonoBehaviour
         question2.Play();
         question2GO.SetActive(true);
     }
-public void OrThatOnetriggered()
+    public void PlayQuestion3()
+    {
+        question3GO.SetActive(true);
+    }
+    public void PlayQuestion4()
+    {
+        question4GO.SetActive(true);
+    }
+
+    public void Question5Paper()
+    {
+        question5GO.SetActive(true);
+    }
+    public void PlayQuestion5Audio()
+    {
+        Q5Audio.Play();
+    }
+
+    public void OrThatOnetriggered()
     {
         if (Ohyougonnapickthatone.isPlaying)
         {

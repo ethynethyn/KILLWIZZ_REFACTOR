@@ -54,11 +54,80 @@ public class QuestionSelectorRaycast : MonoBehaviour
                 }
 
 
+
+                else if (hit.collider.name == ("Q3A"))
+                {
+                    JR1STATICMANAGER.Q3Selected = "A";
+                }
+                else if (hit.collider.name == ("Q3B"))
+                {
+                    JR1STATICMANAGER.Q3Selected = "B";
+
+                }
+                else if (hit.collider.name == ("Q3C"))
+                {
+                    JR1STATICMANAGER.Q3Selected = "C";
+
+                }
+                else if (hit.collider.name == ("Q3D"))
+                {
+                    JR1STATICMANAGER.Q3Selected = "D";
+
+                }
+
+
+
+                else if (hit.collider.name == ("Q4A"))
+                {
+                    JR1STATICMANAGER.Q4Selected = "A";
+                }
+                else if (hit.collider.name == ("Q4B"))
+                {
+                    JR1STATICMANAGER.Q4Selected = "B";
+
+                }
+                else if (hit.collider.name == ("Q4C"))
+                {
+                    JR1STATICMANAGER.Q4Selected = "C";
+
+                }
+                else if (hit.collider.name == ("Q4D"))
+                {
+                    JR1STATICMANAGER.Q4Selected = "D";
+
+                }
+
+
+
+
+
+                else if (hit.collider.name == ("Q5A"))
+                {
+                    JR1STATICMANAGER.Q5Selected = "A";
+                }
+                else if (hit.collider.name == ("Q5B"))
+                {
+                    JR1STATICMANAGER.Q5Selected = "B";
+
+                }
+                else if (hit.collider.name == ("Q5C"))
+                {
+                    JR1STATICMANAGER.Q5Selected = "C";
+
+                }
+                else if (hit.collider.name == ("Q5D"))
+                {
+                    JR1STATICMANAGER.Q5Selected = "D";
+
+                }
             }
             else
             {
                 JR1STATICMANAGER.Q1Selected = "NONE";
                 JR1STATICMANAGER.Q2Selected = "NONE";
+                JR1STATICMANAGER.Q3Selected = "NONE";
+                JR1STATICMANAGER.Q4Selected = "NONE";
+                JR1STATICMANAGER.Q5Selected = "NONE";
             }
 
         }
@@ -66,6 +135,9 @@ public class QuestionSelectorRaycast : MonoBehaviour
         {
             JR1STATICMANAGER.Q1Selected = "NONE";
             JR1STATICMANAGER.Q2Selected = "NONE";
+            JR1STATICMANAGER.Q3Selected = "NONE";
+            JR1STATICMANAGER.Q4Selected = "NONE";
+            JR1STATICMANAGER.Q5Selected = "NONE";
         }
     }
 }

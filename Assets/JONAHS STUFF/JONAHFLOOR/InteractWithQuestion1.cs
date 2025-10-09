@@ -48,6 +48,7 @@ public class InteractWithQuestion1 : MonoBehaviour
             }
             else if (JR1STATICMANAGER.Q1Selected == "B")
             {
+                JR1STATICMANAGER.questionsright++;
                 Tick.SetActive(true);
                 Destroy(gameObject);
                 Question1Selections.SetActive(false);
