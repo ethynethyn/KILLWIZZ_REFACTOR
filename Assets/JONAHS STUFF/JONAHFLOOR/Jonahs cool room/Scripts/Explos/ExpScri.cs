@@ -19,10 +19,12 @@ public class ExpScri : MonoBehaviour
     public GameObject Everything15;
     public GameObject Everything16;
     public CharacterController cc;
+    public GameObject ExitEl;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void DestroyEverything()
     {
+        ExitEl.SetActive(true);
         Everything1.SetActive(false);
         Everything2.SetActive(false);
         Everything3.SetActive(false);

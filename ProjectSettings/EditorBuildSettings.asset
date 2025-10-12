@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahHallWAy.unity
+    guid: 8ba43c06e231a9f4386cc6d006a82d63
+  - enabled: 1
     path: Assets/JONAHS STUFF/First Room/First Room.unity
     guid: 2a2a9407a84ebde45a5c78200e8f6f92
   - enabled: 1
@@ -20,6 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SCENES/FloorExample2.unity
     guid: 4082404e2e99c4c4983b766090d6feb9
+  - enabled: 1
+    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahFloorScene.unity
+    guid: 82dc942c271fe4642899569a160ae3e5
+  - enabled: 1
+    path: Assets/JONAHS STUFF/JONAHFLOOR/FastFloors/sonic1.unity
+    guid: 04c8ec9b029290740a4cad46873c11fb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

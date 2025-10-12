@@ -1,5 +1,4 @@
 using StarterAssets;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class SonicCOMESTOYOU : MonoBehaviour
@@ -24,6 +23,9 @@ public class SonicCOMESTOYOU : MonoBehaviour
     //public GameObject player;
 
     public GameObject black;
+    public GameObject convo1;
+    public GameObject convo2;
+    public GameObject gtaman;
 
     private void Start()
     {
@@ -49,10 +51,12 @@ public class SonicCOMESTOYOU : MonoBehaviour
             timer2 = timer2 - Time.deltaTime;
             if ( timer2 < 0)
             {
+                gtaman.SetActive(true);
                 black.SetActive(false);
 
                 cc.enabled = (true);
-
+                convo1.SetActive(true);
+                convo2.SetActive(true);
                 //player.SetActive(true);
                 Destroy(gameObject);
             }

@@ -22,6 +22,8 @@ public class InteractQuestion5 : MonoBehaviour
 
     public GameObject AllTheJonahs;
 
+    public GameObject Explosion2;
+
 
 
     void Start()
@@ -43,7 +45,7 @@ public class InteractQuestion5 : MonoBehaviour
                 JR1STATICMANAGER.Q5Selected == "D")
 
             {
-
+                Explosion2.SetActive(true);
                 AllTheJonahs.SetActive(false);
 
                 RedX.SetActive(true);
@@ -53,6 +55,8 @@ public class InteractQuestion5 : MonoBehaviour
             }
             else if (JR1STATICMANAGER.Q5Selected == "A")
             {
+                Explosion2.SetActive(true);
+
                 JR1STATICMANAGER.questionsright++;
                 AllTheJonahs.SetActive(false);
 
@@ -90,6 +94,7 @@ public class InteractQuestion5 : MonoBehaviour
 
         if (outline.enabled == true && Input.GetKeyDown(KeyCode.E) && donethething == false)
         {
+            Explosion2.SetActive(false);
             gameObject.GetComponent<Animator>().Play("GoIntoPos");
             donethething = true;
             outline.enabled = false;

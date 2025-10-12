@@ -40,6 +40,9 @@ public class HandleMusicAnimation : MonoBehaviour
     public GameObject question5GO;
     public AudioSource sitdown;
 
+    public GameObject question1Paper;
+
+
     public AudioSource Q5Audio;
 
 
@@ -54,7 +57,20 @@ public class HandleMusicAnimation : MonoBehaviour
     public GameObject DoExplode;
 
     public GameObject JonahGun;
+    public AudioSource fastplay1;
+    public GameObject chair;
 
+    public void fastplay()
+    {
+        fastplay1.Play();
+
+    }
+    public void Explode2play()
+    {
+        Explosion2.SetActive(true);
+        chair.SetActive(true);
+
+    }
     public void shoottoKill()
     {
         JonahGun.SetActive(true);
@@ -158,6 +174,7 @@ public class HandleMusicAnimation : MonoBehaviour
     public void Question1()
     {
         Q1.Play();
+        question1Paper.SetActive(true);
     }
 
     public void Ohhyougonna()
@@ -214,6 +231,7 @@ public class HandleMusicAnimation : MonoBehaviour
             
             if (!Ohyougonnapickthatone.isPlaying)
             {
+                
                 animator.Play("orthatone", 0, 0f);
 
             }
@@ -228,10 +246,10 @@ public class HandleMusicAnimation : MonoBehaviour
            if (JR1STATICMANAGER.Q2Selected == "C")
            {
                 animator.Play("playboi carti come");
-                if (question2.isPlaying)
-                {
-                    question2.Stop();
-                }
+                //if (question2.isPlaying)
+                //{
+                //    question2.Stop();
+                //}
 
            }
            else if (IsInAnimation("playboi carti come"))

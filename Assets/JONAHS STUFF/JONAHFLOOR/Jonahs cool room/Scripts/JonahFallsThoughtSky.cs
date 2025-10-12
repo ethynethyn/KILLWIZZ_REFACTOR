@@ -1,4 +1,5 @@
 using NUnit.Framework.Internal;
+using System.Transactions;
 using UnityEngine;
 
 public class JonahFallsThoughtSky : MonoBehaviour
@@ -19,7 +20,19 @@ public class JonahFallsThoughtSky : MonoBehaviour
     public Mesh water;
     public Mesh twinGun;
     public HandleMusicAnimation HMA;
+    private bool haspressedW;
 
+    public AudioSource ShootNoise;
+
+    public void Shootbruh()
+    {
+        ShootNoise.Play();
+    }
+    private void Awake()
+    {
+        haspressedW = false;
+
+    }
     public void TurnOffAnimator()
     {
         animator.enabled = false;
@@ -68,6 +81,24 @@ public class JonahFallsThoughtSky : MonoBehaviour
     [SerializeField] private Transform target; // drag your Player Capsule here in Inspector
 
     public GameObject player;
+
+    public void FallSky()
+    {
+        if (JR1STATICMANAGER.alreadydone == false)
+        {
+            gameObject.GetComponent<Animator>().Play("Room tour");
+            Explosion.SetActive(true);
+            JR1STATICMANAGER.alreadydone = true;
+
+
+        }
+        else
+        {
+            gameObject.GetComponent<Animator>().Play("AlreadyDone");
+            Explosion.SetActive(true);
+
+        }
+    }
     void Update()
     {
 
@@ -89,14 +120,6 @@ public class JonahFallsThoughtSky : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            gameObject.GetComponent<Animator>().Play("Room tour");
-            Explosion.SetActive(true);
-
-
-            //startnow = true;
-        }
 
         if (startnow == true)
         {

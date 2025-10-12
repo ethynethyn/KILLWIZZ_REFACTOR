@@ -2,19 +2,24 @@ using UnityEngine;
 
 public class SonicRoomGameController : MonoBehaviour
 {
+    public GameObject SonicDialogueTrigger;
+
     public GameObject realsonic;
     public GameObject fakesonic;
     public GameObject gtaman;
     private bool done;
 
-    private void Update()
+
+    public void YouWearSonicsSkin()
     {
-        if (Input.GetKeyDown(KeyCode.R) && done == false)
+        if (done == false)
         {
-            done = true;
+            SonicDialogueTrigger.SetActive(false);
             realsonic.SetActive(false);
             fakesonic.SetActive(true);
-            gtaman.SetActive(true);
+            //gtaman.SetActive(true);
+            done = true;
         }
+
     }
 }

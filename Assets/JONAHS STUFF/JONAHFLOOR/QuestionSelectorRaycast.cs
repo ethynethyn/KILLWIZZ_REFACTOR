@@ -9,11 +9,28 @@ public class QuestionSelectorRaycast : MonoBehaviour
     {
         
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2f))
         {
-            if (hit.collider.CompareTag("Question"))
+
+            if (hit.collider.CompareTag("Door1"))
             {
-                
+                JR1STATICMANAGER.MainRoomdoor1 = true;
+            }
+            else
+            {
+                JR1STATICMANAGER.MainRoomdoor1 = false;
+            }
+
+
+
+
+
+
+
+
+                if (hit.collider.CompareTag("Question"))
+            {
+
                 if (hit.collider.name == ("Q1A"))
                 {
                     JR1STATICMANAGER.Q1Selected = "A";
@@ -138,6 +155,7 @@ public class QuestionSelectorRaycast : MonoBehaviour
             JR1STATICMANAGER.Q3Selected = "NONE";
             JR1STATICMANAGER.Q4Selected = "NONE";
             JR1STATICMANAGER.Q5Selected = "NONE";
+            JR1STATICMANAGER.MainRoomdoor1 = false;
         }
     }
 }
