@@ -4,11 +4,12 @@ using UnityEngine.SceneManagement;
 public class loadScene : MonoBehaviour
 {
     public string scene;
+    public bool isInTrigger = false;
     public GameObject interactionText;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isInTrigger == true)
         {
             loadLevel();
         }
@@ -26,6 +27,7 @@ public class loadScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactionText.SetActive(true);
+            isInTrigger = true;
         }
     }
 
@@ -34,6 +36,7 @@ public class loadScene : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             interactionText.SetActive(false);
+            isInTrigger = false;
         }
     }
 }
