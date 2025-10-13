@@ -1,0 +1,68 @@
+# Blender 3.6.0 MTL File: 'SonicMan.blend'
+# www.blender.org
+
+newmtl test_cht_rival01.xno0
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_rival01_body_df.png
+map_Ks textures/cht_rival01_body_sp.png
+map_Ns textures/cht_rival01_body_rf.png
+map_Bump -bm 1.000000 textures/cht_rival01_body_nt.png
+
+newmtl test_cht_rival01.xno2.001
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_rival01_face_df.png
+map_Ks textures/cht_rival01_face_sp.png
+map_Bump -bm 1.000000 textures/cht_rival01_face_nt.png
+
+newmtl test_cht_rival01_face.xno0.001
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_rival01_face_df.png
+map_Ks textures/cht_rival01_face_sp.png
+map_Bump -bm 1.000000 textures/cht_rival01_face_nt.png
+
+newmtl test_cht_rival01_face.xno1.001
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_town_common_teeth_df.png
+map_Ks textures/cht_town_common_teeth_sp.png
+map_Bump -bm 1.000000 textures/cht_town_common_teeth_nt.png
+
+newmtl test_cht_rival01_face.xno2.001
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_town_common_eye_df.png
+map_Ks textures/cht_town_common_eye_sp.png
+map_Bump -bm 1.000000 textures/cht_town_common_eye_nt.png
+
+newmtl test_cht_rival01_hair.xno1
+Ka 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd textures/cht_rival01_hair_df.png
+map_Ks textures/cht_rival01_hair_sp.png
+map_Ns textures/cht_rival01_hair_rf.png
+map_Bump -bm 1.000000 textures/cht_rival01_hair_nt.png

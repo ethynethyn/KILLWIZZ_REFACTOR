@@ -1,0 +1,6 @@
+Game: Sonic the Hedgehog 4: Episode 2
+Subject: Metal Sonic
+Copyright: Sega
+Model Ripper: Random Talking Bush
+Hosting Permissions: The Models Resource
+Notes: This model was manually rigged, using the bone structure extracted from the original ZNO model file. Inaccuracies are to be expected. Also, fun fact -- this is the same model (more or less) as used in Sonic Free Riders. Ah, Sega and their recycling of models. "Why fix what isn't broken?"
