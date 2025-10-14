@@ -21570,7 +21570,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 174692d7f1af7c54da51a0764daee204, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -432
+      value: 437
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 174692d7f1af7c54da51a0764daee204, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21578,7 +21578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 174692d7f1af7c54da51a0764daee204, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -425
+      value: -381
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 174692d7f1af7c54da51a0764daee204, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30567,6 +30567,10 @@ PrefabInstance:
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: Gravity
       value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
+      propertyPath: canMove
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
       propertyPath: MoveSpeed
