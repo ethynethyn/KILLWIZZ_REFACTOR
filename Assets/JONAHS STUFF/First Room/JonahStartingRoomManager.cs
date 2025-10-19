@@ -4,8 +4,16 @@ using UnityEngine.Audio;
 
 public class JonahStartingRoomManager : MonoBehaviour
 {
+    public GameObject Explosion1;
+    public GameObject Explosion2;
+    public GameObject Explosion3;
+    public GameObject Explosion4;
+    public GameObject Tv1;
+    public GameObject Tv2;
+
+
     public FirstPersonController fpsControl;
-    private float timer = 7f;
+    private float timer = 10f;
     private float timerForWizardSpeaking = 1f;
     private bool Exploded = false;
     private bool PlayedWizardSpeaking;
@@ -20,6 +28,9 @@ public class JonahStartingRoomManager : MonoBehaviour
 
     public Animator PlayerAnimator;
     private bool playerGround;
+
+    public bool startCutscene;
+    private bool nextpart;
     void Start()
     {
         fpsControl.MoveSpeed = 0;
@@ -27,9 +38,19 @@ public class JonahStartingRoomManager : MonoBehaviour
         fpsControl.JumpHeight = 0;
     }
     
+    
     private void Update()
     {
-        timer = timer - Time.deltaTime;
+
+        if (startCutscene == true)
+        {
+            timer = timer - Time.deltaTime;
+
+        }
+
+
+
+
         if (timer < 0 && Exploded == false)
         {
             Exploded = true;
@@ -47,9 +68,14 @@ public class JonahStartingRoomManager : MonoBehaviour
 
             if (timerForWizardSpeaking < 0)
             {
+                Explosion1.SetActive(true);
+                Explosion2.SetActive(true);
+                Tv1.SetActive(false);
+                Tv2.SetActive(false);
                 PlayedWizardSpeaking = true;
                 WizardScreens.SetActive(true);
                 WizardAudio.Play();
+
             }
 
         }
@@ -60,6 +86,8 @@ public class JonahStartingRoomManager : MonoBehaviour
 
             if (PlayedWizardSpeaking == true)
             {
+                Explosion3.SetActive(true);
+                Explosion4.SetActive(true);
                 PlayerAnimator.Play("PlayerAnimation jonah sceme");
                 playerGround = true;
             }

@@ -23,7 +23,7 @@ public class JonahFallsThoughtSky : MonoBehaviour
     private bool haspressedW;
 
     public AudioSource ShootNoise;
-
+    
     public void Shootbruh()
     {
         ShootNoise.Play();
