@@ -22,13 +22,20 @@ public class QuestionSelectorRaycast : MonoBehaviour
             }
 
 
+            if (hit.collider.CompareTag("Doorstart"))
+            {
+                JR1STATICMANAGER.FirstDoor = true;
+            }
+            else
+            {
+                JR1STATICMANAGER.FirstDoor = false;
+            }
 
 
 
 
 
-
-                if (hit.collider.CompareTag("Question"))
+            if (hit.collider.CompareTag("Question"))
             {
 
                 if (hit.collider.name == ("Q1A"))

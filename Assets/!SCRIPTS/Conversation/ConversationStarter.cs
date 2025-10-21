@@ -20,19 +20,13 @@ public class ConversationStarter : MonoBehaviour
             ConversationManager.Instance != null &&
             !ConversationManager.Instance.IsConversationActive)
         {
-            if (interactionImage != null)
-                interactionImage.SetActive(true);
 
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConversationManager.Instance.StartConversation(myConversation);
             }
         }
-        else
-        {
-            if (interactionImage != null)
-                interactionImage.SetActive(false);
-        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +34,7 @@ public class ConversationStarter : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInTrigger = true;
+            interactionImage.SetActive(true);
         }
     }
 

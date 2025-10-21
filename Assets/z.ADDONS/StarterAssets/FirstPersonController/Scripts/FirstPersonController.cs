@@ -11,7 +11,11 @@ namespace StarterAssets
 #endif
 	public class FirstPersonController : MonoBehaviour
 	{
-		[Header("Player")]
+		[Header("Enable Move")]
+		[Tooltip("Only used to disbale movement during the cutscene. Leave as 'true' in all other cases")]
+		public bool canMove;
+
+        [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
@@ -110,16 +114,28 @@ namespace StarterAssets
 			_fallTimeoutDelta = FallTimeout;
 		}
 
+		public void enableMove()
+		{
+			canMove = true;
+		}
+
 		private void Update()
 		{
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+            if (canMove == true)
+            {
+                JumpAndGravity();
+                GroundedCheck();
+                Move();
+            }
+
 		}
 
 		private void LateUpdate()
 		{
-			CameraRotation();
+			if (canMove == true)
+			{
+				CameraRotation();
+			}
 		}
 
 		private void GroundedCheck()

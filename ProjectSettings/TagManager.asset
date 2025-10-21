@@ -12,6 +12,8 @@ TagManager:
   - Outline
   - Question
   - Door1
+  - FxTemporaire
+  - Doorstart
   layers:
   - Default
   - TransparentFX

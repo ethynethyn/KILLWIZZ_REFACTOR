@@ -6,38 +6,44 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahHallWAy.unity
-    guid: 8ba43c06e231a9f4386cc6d006a82d63
-  - enabled: 1
     path: Assets/JONAHS STUFF/First Room/First Room.unity
     guid: 2a2a9407a84ebde45a5c78200e8f6f92
   - enabled: 1
-    path: Assets/SCENES/MainMenu.unity
-    guid: 908863a4a40404e4b93d784d240fc48e
+    path: Assets/AngelStuff/VillageScene/FirstScene.unity
+    guid: ab76f051d5b3a9242adff15cf1d37281
   - enabled: 1
-    path: Assets/SCENES/OVERWORLD TEST.unity
-    guid: c288d9079d9de49cbac82c4134b0dab8
-  - enabled: 1
-    path: Assets/SCENES/FloorExample1.unity
-    guid: 707acc8dffb72b144bb1ffbe1c965f3d
-  - enabled: 1
-    path: Assets/SCENES/FloorExample2.unity
-    guid: 4082404e2e99c4c4983b766090d6feb9
-  - enabled: 1
-    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahFloorScene.unity
-    guid: 82dc942c271fe4642899569a160ae3e5
+    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahHallWAy.unity
+    guid: 8ba43c06e231a9f4386cc6d006a82d63
   - enabled: 1
     path: Assets/JONAHS STUFF/JONAHFLOOR/FastFloors/sonic1.unity
     guid: 04c8ec9b029290740a4cad46873c11fb
   - enabled: 1
+    path: Assets/JONAHS STUFF/JONAHFLOOR/JonahFloorScene.unity
+    guid: 82dc942c271fe4642899569a160ae3e5
+  - enabled: 1
+    path: Assets/AngelStuff/BlizzardLevel/BlizzardFloor.unity
+    guid: 55e1a4be40f47df45a59ac651e473db6
+  - enabled: 1
     path: Assets/JONAHS STUFF/BeforeLastRoom/Scenes/B4Last.unity
     guid: 8c00e7542fa5afb49aff892179f79ed8
   - enabled: 1
-    path: Assets/JONAHS STUFF/BeforeLastRoom/Scenes/JONAHROOMFINAL.unity
-    guid: 04ab1d75ca83f684f83f68f7130646c4
-  - enabled: 1
     path: Assets/JONAHS STUFF/BeforeLastRoom/Scenes/B42.unity
     guid: 0c4a0f6a9cad2d747980867a5f83bd61
+  - enabled: 1
+    path: Assets/JONAHS STUFF/BeforeLastRoom/Scenes/JONAHROOMFINAL.unity
+    guid: 04ab1d75ca83f684f83f68f7130646c4
+  - enabled: 0
+    path: Assets/SCENES/MainMenu.unity
+    guid: 908863a4a40404e4b93d784d240fc48e
+  - enabled: 0
+    path: Assets/SCENES/OVERWORLD TEST.unity
+    guid: c288d9079d9de49cbac82c4134b0dab8
+  - enabled: 0
+    path: Assets/SCENES/FloorExample1.unity
+    guid: 707acc8dffb72b144bb1ffbe1c965f3d
+  - enabled: 0
+    path: Assets/SCENES/FloorExample2.unity
+    guid: 4082404e2e99c4c4983b766090d6feb9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

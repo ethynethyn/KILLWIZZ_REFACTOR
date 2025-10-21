@@ -12,6 +12,7 @@ public class JR1STATICMANAGER : MonoBehaviour
     public static string Q5Selected = "NONE";
     public static int questiondone;
     public static bool alreadydone;
+    public static bool FirstDoor;
 
     public static int questionsright;
     private void Awake()
