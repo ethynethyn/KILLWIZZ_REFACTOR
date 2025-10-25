@@ -8844,7 +8844,7 @@ MonoBehaviour:
   playerCamera: {fileID: 121827445}
   raycastDistance: 3
   panelTag: ElevatorPanel
-  nextSceneName: FloorExample2
+  nextSceneName: BOSS BATTLE
   elevatorDoorAnimator: {fileID: 1353541504}
   doorCloseDelay: 3
   doorOpenDelay: 10

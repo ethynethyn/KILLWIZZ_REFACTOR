@@ -152,6 +152,7 @@ public class QuestionSelectorRaycast : MonoBehaviour
                 JR1STATICMANAGER.Q3Selected = "NONE";
                 JR1STATICMANAGER.Q4Selected = "NONE";
                 JR1STATICMANAGER.Q5Selected = "NONE";
+                
             }
 
         }
@@ -163,6 +164,7 @@ public class QuestionSelectorRaycast : MonoBehaviour
             JR1STATICMANAGER.Q4Selected = "NONE";
             JR1STATICMANAGER.Q5Selected = "NONE";
             JR1STATICMANAGER.MainRoomdoor1 = false;
+            JR1STATICMANAGER.FirstDoor = false;
         }
     }
 }
