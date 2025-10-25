@@ -21,6 +21,7 @@ Material:
   - _USE_AMBIENT_OVERRIDE_ON
   - _USE_PIXEL_LIGHTING_ON
   - _USE_SPECULAR_ON
+  - _USE_VERTEX_COLORS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -90,9 +91,9 @@ Material:
     m_Ints:
     - _ColorBitDepth: 64
     - _ResolutionLimit: 64
-    - _SnapsPerUnit: 32
+    - _SnapsPerUnit: 405
     m_Floats:
-    - _AffineTextureStrength: 1
+    - _AffineTextureStrength: 0
     - _AlphaClip: 1
     - _AlphaToMask: 0
     - _AmbientLight: 0.05
@@ -130,6 +131,7 @@ Material:
     - _USE_PIXEL_LIGHTING: 1
     - _USE_POINT_FILTER: 1
     - _USE_SPECULAR: 1
+    - _USE_VERTEX_COLORS: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -138,6 +140,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!114 &9188287531054821174
 MonoBehaviour:
   m_ObjectHideFlags: 11

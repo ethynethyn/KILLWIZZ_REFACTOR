@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SCENES/FloorExample2.unity
     guid: 4082404e2e99c4c4983b766090d6feb9
+  - enabled: 1
+    path: Assets/ETHYNS STUFF/BOSS BATTLE.unity
+    guid: 8a8a47558d6f4494dac346022780d1d3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
