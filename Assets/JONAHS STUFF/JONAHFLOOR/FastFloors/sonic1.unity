@@ -2893,7 +2893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db54ec7272206489e9d8a8591115b1cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactionImage: {fileID: 0}
+  interactionImage: {fileID: 723486845}
   myConversation: {fileID: 1038726609}
 --- !u!65 &295863021
 BoxCollider:
@@ -5095,6 +5095,16 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &723486845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2676727446397853817, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+  m_PrefabInstance: {fileID: 826613064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &723486849 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+  m_PrefabInstance: {fileID: 826613064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &724049278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 794892e826386d0459eb676f1469646a, type: 3}
@@ -5392,6 +5402,103 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &826613064
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1436058771}
+    m_Modifications:
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 859565569214536203, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676727446397853817, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
+      propertyPath: m_Name
+      value: MouthIcon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a58b7ca911e11043b1e36238b1d03e5, type: 3}
 --- !u!1 &834883086
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,11 +7210,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 22
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":127,"yPos":521},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Im
-    not going to wear your skin\r\n","parentUIDs":[16],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":436,"yPos":523},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"OK!\r\n","parentUIDs":[16],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":true,"xPos":239.5,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"wait
-    bro. could you do me a favour actually and um..\r\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.494},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":251,"yPos":151},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"wear
-    my skin \r\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.506},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":271,"yPos":266},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"PLEASEEEEEEEEEEEEEEEEE","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.512},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":281,"yPos":387},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    will really owe you one\r\n","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.519},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":141,"yPos":618},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":19}],"EditorInfo":{"isRoot":false,"xPos":82.5,"yPos":521},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Im
+    not going to wear your skin\r\n","parentUIDs":[16],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":391.5,"yPos":523},"ID":18,"ParamActions":[],"TMPFontGUID":null,"Text":"OK!\r\n","parentUIDs":[16],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":14}],"EditorInfo":{"isRoot":true,"xPos":195,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"wait
+    bro. could you do me a favour actually and um..\r\n","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.494},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":206.5,"yPos":151},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"wear
+    my skin \r\n","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.506},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":16}],"EditorInfo":{"isRoot":false,"xPos":226.5,"yPos":266},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"PLEASEEEEEEEEEEEEEEEEE","parentUIDs":[14],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.512},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":17},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":18}],"EditorInfo":{"isRoot":false,"xPos":236.5,"yPos":387},"ID":16,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    will really owe you one\r\n","parentUIDs":[15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.519},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":96.5,"yPos":618},"ID":19,"ParamActions":[],"TMPFontGUID":null,"Text":"YOU
     CHOOSE WRONG\r","parentUIDs":[17],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0.447}]}'
   saveVersion: 110
   DefaultName: 
@@ -10106,6 +10213,7 @@ Transform:
   - {fileID: 1625730821}
   - {fileID: 716326134}
   - {fileID: 1400485324}
+  - {fileID: 723486849}
   - {fileID: 1300917192}
   - {fileID: 1547513390}
   m_Father: {fileID: 0}

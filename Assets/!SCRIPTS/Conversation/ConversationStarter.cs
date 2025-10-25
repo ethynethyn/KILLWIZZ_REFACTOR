@@ -24,6 +24,7 @@ public class ConversationStarter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConversationManager.Instance.StartConversation(myConversation);
+                interactionImage.SetActive(false);
             }
         }
 
