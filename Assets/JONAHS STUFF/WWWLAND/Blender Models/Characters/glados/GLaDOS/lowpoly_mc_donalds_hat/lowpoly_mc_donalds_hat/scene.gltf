@@ -1,0 +1,274 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 717,
+      "max": [
+        0.4611548185348511,
+        0.4245877265930176,
+        0.4609375298023224
+      ],
+      "min": [
+        -0.4611548185348511,
+        -0.08485078811645508,
+        -0.8421655893325806
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 8604,
+      "componentType": 5126,
+      "count": 717,
+      "max": [
+        0.9998089671134949,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -0.9998089671134949,
+        -0.9993351101875305,
+        -0.9472872614860535
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 717,
+      "max": [
+        0.999998152256012,
+        0.9925889372825623,
+        0.9999899864196777,
+        1.0
+      ],
+      "min": [
+        -0.8791787028312683,
+        -0.9561743140220642,
+        -0.9997591376304626,
+        1.0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 717,
+      "max": [
+        0.9974750280380249,
+        0.9910900592803955
+      ],
+      "min": [
+        0.010381445288658142,
+        1.3560056686401367e-06
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2688,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "✞BloodTea✞ (https://sketchfab.com/bloodtea)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/lowpoly-mc-donalds-hat-df93878946ed45e6aea8d20873f3ba11",
+      "title": "Lowpoly Mc Donalds hat"
+    },
+    "generator": "Sketchfab-16.62.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 10752,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5736,
+      "byteOffset": 10752,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 17208,
+      "byteOffset": 16488,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 11472,
+      "byteOffset": 33696,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 45168,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/standardSurface1_baseColor.png"
+    },
+    {
+      "uri": "textures/standardSurface1_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "standardSurface1",
+      "normalTexture": {
+        "index": 1
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "pCube3_standardSurface1_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "ccb1490b766a4e8f8bebd2ffe237cd82.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.9846128225326538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.9846128225326538,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.9846128225326538,
+        0.0,
+        0.0,
+        4.990767955780029,
+        0.0,
+        1.0
+      ],
+      "name": "pCube3"
+    },
+    {
+      "mesh": 0,
+      "name": "pCube3_standardSurface1_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
