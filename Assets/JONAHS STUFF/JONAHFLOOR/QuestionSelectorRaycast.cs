@@ -7,10 +7,21 @@ public class QuestionSelectorRaycast : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        int ignore = LayerMask.GetMask("IgnoreLook");
+        int mask = ~ignore;    // invert to ignore that layer
+
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 2f))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 2f, mask))
         {
+            if (hit.collider.CompareTag("Chest"))
+            {
+                JR1STATICMANAGER.Chest = true;
+            }
+            else
+            {
+                JR1STATICMANAGER.Chest = false;
+            }
+
 
             if (hit.collider.CompareTag("Door1"))
             {
@@ -165,6 +176,7 @@ public class QuestionSelectorRaycast : MonoBehaviour
             JR1STATICMANAGER.Q5Selected = "NONE";
             JR1STATICMANAGER.MainRoomdoor1 = false;
             JR1STATICMANAGER.FirstDoor = false;
+            JR1STATICMANAGER.Chest = false;
         }
     }
 }

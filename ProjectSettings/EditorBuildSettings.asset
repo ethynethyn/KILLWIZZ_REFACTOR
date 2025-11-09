@@ -47,6 +47,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ETHYNS STUFF/BOSS BATTLE.unity
     guid: 8a8a47558d6f4494dac346022780d1d3
+  - enabled: 1
+    path: Assets/JONAHS STUFF/WWWLAND/Scenes/WWWLand.unity
+    guid: fadd176f67aab054da4284b83c2bc2a5
+  - enabled: 1
+    path: Assets/JONAHS STUFF/WWWLAND/Scenes/DoofScene.unity
+    guid: 92a20d4cfe8d91f4da7cc36df6cc3dc0
+  - enabled: 1
+    path: Assets/JONAHS STUFF/WWWLAND/Scenes/TempMikuConcert.unity
+    guid: 758ab801281858b41b7980e8faa4be14
+  - enabled: 1
+    path: Assets/JONAHS STUFF/WWWLAND/Scenes/Mikucon.unity
+    guid: c5534fd08b3879246851af6c66a358f9
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

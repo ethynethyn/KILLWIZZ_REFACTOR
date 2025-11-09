@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class JR1STATICMANAGER : MonoBehaviour
 {
-
+    public static bool Chest;
     public static bool MainRoomdoor1;
 
     public static string Q1Selected = "NONE";
