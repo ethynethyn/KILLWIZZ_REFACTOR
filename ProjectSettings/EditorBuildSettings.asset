@@ -59,6 +59,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/JONAHS STUFF/WWWLAND/Scenes/Mikucon.unity
     guid: c5534fd08b3879246851af6c66a358f9
+  - enabled: 1
+    path: Assets/JONAHS STUFF/WWWLAND/Scenes/DoofInside.unity
+    guid: 72d8758430a947c45b5b1ff0a02e4390
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
